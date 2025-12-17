@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الكنترول</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+:root{
+    --blue:#00e5ff;
+    --purple:#7c4dff;
+    --pink:#ff4fd8;
+}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family: Tahoma, Arial;
+    background: radial-gradient(circle at top,#0b1020,#000);
+    color:#fff;
+    text-align:center;
+}
+
+.container{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px 20px;
+    max-width:380px;
+    width:100%;
+    box-shadow:0 0 30px rgba(0,229,255,.15);
+}
+
+.avatar{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid var(--blue);
+    box-shadow:
+        0 0 20px var(--blue),
+        0 0 40px var(--purple);
+    margin-bottom:15px;
+}
+
+h1{
+    margin:10px 0 5px;
+    font-size:30px;
+    background:linear-gradient(90deg,var(--blue),var(--pink));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+p{
+    font-size:16px;
+    opacity:.85;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+    color:#000;
+    background:linear-gradient(90deg,var(--blue),var(--purple));
+    box-shadow:0 0 15px rgba(124,77,255,.6);
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:scale(1.04);
+    box-shadow:0 0 25px rgba(255,79,216,.8);
+}
+
+footer{
+    margin-top:20px;
+    font-size:13px;
+    opacity:.5;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="card">
+        <img src="avatar.png" class="avatar" alt="الكنترول">
+
+        <h1>الكنترول</h1>
+        <p>أهلاً بيك 👋<br>تابعني على القنوات الرسمية</p>
+
+        <a class="btn" href="https://t.me/+CiI-uDbbHSZiYjc0" target="_blank">📢 تيليجرام</a>
+        <a class="btn" href="https://whatsapp.com/channel/0029VajFr0cAO7RKJt2R021b" target="_blank">💬 واتساب</a>
+    </div>
+
+    <footer>
+        © الكنترول
+    </footer>
+</div>
+</body>
+</html>
